@@ -2,7 +2,35 @@
 # in the package sets. Below is an example to change the branch name for a given
 # package
 #
-# overrides:
-#   - rtt
-#     branch: test
-# 
+
+overrides:
+  # For compatibility with qt5
+  - gui/vizkit3d:
+    github: rock-core/gui-vizkit3d.git
+    branch: feature/qt5
+
+  - gui/rock_widget_collection:
+    github: rock-core/gui-rock_widget_collection.git
+    branch: feature/qt5
+
+  - gui/osg_qt4:
+    github: rock-core/gui-osg_qt4.git
+    branch: feature/qt5
+
+  - base/types:
+    github: rock-core/base-types.git
+    branch: feature/qt5
+
+  # Pending merge requests
+  - tutorials/designer_widget_tutorial:
+    github: haider8645/tutorials-designer_widget_tutorial
+    branch: qt5   
+  
+  - tutorials/vizkit3d_plugin_tutorial:
+    github: haider8645/tutorials-vizkit3d_plugin_tutorial
+    branch: feature/qt5       
+
+  - tutorials/rock_tutorial :
+    github: haider8645/tutorials-rock_tutorial
+    branch: feature/qt5       
+
